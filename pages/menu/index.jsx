@@ -1,8 +1,11 @@
+import Layout from "../../Components/Layout/Layout";
+
 export default function DefaultPage() {
   return (
     <div>
-      <h1>Ini halaman default kalau routenya mengarah ke "/menu" saja</h1>
-      <hr />
+      <Layout>
+        <h1 className="title">Ini halaman default kalau routenya mengarah ke "/menu" saja</h1>
+      </Layout>
     </div>
   );
 }
