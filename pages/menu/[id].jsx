@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import Layout from "../../Components/Layout/Layout";
+import styles from "../../styles/Detail.module.css";
 
 export default function MenuDetail(props) {
   // const router = useRouter();
@@ -7,10 +8,14 @@ export default function MenuDetail(props) {
   const { produk } = props;
   return (
     <Layout pageTitle="Item Detail">
-      <img src={produk.image} width={100} height={100} alt="Boneka beruang" />
-      <p>{produk.title}</p>
-      <p>{produk.price}</p>
-      <p>{produk.description}</p>
+      <div className={styles.card}>
+        <img src={produk.image} width={100} height={100} alt="Boneka beruang" />
+        <p>
+          <strong>{produk.title}</strong>
+        </p>
+        <p>${produk.price}</p>
+        <p>{produk.description}</p>
+      </div>
     </Layout>
   );
 }

@@ -6,8 +6,10 @@ export default function Home() {
   return (
     <div>
       <Layout pageTitle="Home Page">
-        <Image src="/boneka-beruang.jpg" width={300} height={300} alt="Boneka beruang" />
-        <h1 className={styles["title-home"]}>Ini Home</h1>
+        <div className={styles.card}>
+          <Image src="/boneka-beruang.jpg" width={300} height={300} alt="Boneka beruang" />
+          <h1 className={styles["title-home"]}>Ini Home</h1>
+        </div>
       </Layout>
     </div>
   );
