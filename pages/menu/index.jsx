@@ -1,5 +1,5 @@
-import Layout from "../../Components/Layout/Layout";
 import { useRouter } from "next/router";
+import Layout from "../../Components/Layout/Layout";
 import styles from "../../styles/Produk.module.css";
 
 export default function DefaultPage(props) {

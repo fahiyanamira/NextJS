@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import Layout from "../../Components/Layout/Layout";
 import styles from "../../styles/Detail.module.css";
 
